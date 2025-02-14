@@ -43,8 +43,18 @@ public class HashmapProgram {
 
 		}
 		
-		System.out.println(h1);
-		System.out.println(h2);
+		System.out.println(h2.entrySet());
+		System.out.println(h2.keySet()+" "+h2.values());
+		
+		for (Character key : h2.keySet()) {
+		    System.out.println("Key: " + key + ", Value: " + h2.get(key));
+		}
+		
+		for (Integer t:h2.values())
+		{
+		    System.out.println("Values " + t);
+
+		}
 	}
 
 }
